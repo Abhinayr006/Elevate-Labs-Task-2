@@ -1,0 +1,41 @@
+
+EDA Inferences for Titanic Dataset:
+1. Summary Statistics:
+   - Numerical features (Age, Fare, SibSp, Parch) are standardized (mean~0, std~1).
+   - ~33% of passengers survived.
+   - Most passengers are in Pclass 3 (~64%), followed by Pclass 1 and 2.
+   - ~68% male, ~32% female.
+   - ~76% boarded at Southampton (Embarked_S), ~10% at Queenstown (Embarked_Q).
+2. Histograms:
+   - Age: Normal, centered at 0, few extreme ages (IQR cleaned).
+   - Fare: Right-skewed, most fares low.
+   - SibSp/Parch: Most have 0 siblings/spouses or parents/children.
+3. Boxplots:
+   - Few outliers in Age/Fare due to IQR removal.
+   - Some high SibSp/Parch (large families).
+4. Pairplot:
+   - No strong linear relationships between numerical features.
+   - Survivors tend to have higher Fares, spread across Ages.
+5. Correlation Matrix:
+   - Sex correlates with Survived (~0.5, females survived more).
+   - Pclass negatively correlates with Survived (~-0.3, lower classes survived less).
+   - Fare and Pclass negatively correlated (~-0.5, first-class paid more).
+   - Embarked_S has slight correlation with Survived.
+6. 3D Scatter Plot:
+   - Survivors common in Pclass 1, higher Fares, across Ages.
+   - Pclass 3, low Fares have lower survival.
+7. Categorical Plots:
+   - Pclass 1 has highest survival (~60%), Pclass 3 lowest (~25%).
+   - Females (Sex=1) have higher survival (~75%) than males (~20%).
+   - Southampton passengers (Embarked_S=1) have slightly different survival rates.
+8. Patterns/Trends:
+   - Females, first-class passengers survived more (lifeboat priority).
+   - Higher fares (Pclass 1) link to survival.
+   - Age less predictive, survival spread across ages.
+9. Anomalies:
+   - Rare large families (high SibSp/Parch).
+   - No major anomalies post-IQR cleaning.
+10. Feature Inferences:
+   - Sex, Pclass, Fare are key predictors.
+   - Age less predictive.
+   - Embarked_S/Embarked_Q may have minor influence.
