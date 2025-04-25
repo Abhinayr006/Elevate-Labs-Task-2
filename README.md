@@ -23,7 +23,7 @@ This repository contains the deliverables for Task 2 of the Elevate Labs interns
 
 ## Notes for Mentors
 - The 3D scatter plot is provided as `3d_scatter.html` (not PNG) because `kaleido` 0.2.1, used for PNG export in Plotly, consistently hung on Python 3.13. Saving as HTML ensures reliability and offers interactivity (rotate/zoom in a browser) for better EDA insights.
-- All visualizations and inferences are generated in `ElevateLabsTask-2.ipynb`. Cells are numbered and commented for clarity (e.g., Cell 8 for the 3D scatter plot, Cell 10 for inferences).
+- All visualizations and inferences are generated in `ElevateLabsTask-2.ipynb`. Cells are numbered and commented for clarity
 - Survival rates in `eda_inferences.txt` (e.g., ~70-80% for females) are approximate, based on visualizations. Exact rates can be computed using `df.groupby('Sex')['Survived'].mean()` if needed.
 
 ## How to View
